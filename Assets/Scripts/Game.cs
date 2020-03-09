@@ -249,7 +249,7 @@ public class Game : MonoBehaviour
 
         if (time_req && ammo_req)
         {
-            if (/*distance_req &&*/ enemyDetected)
+            if (distance_req && enemyDetected)
             {
                 string payload = (scale * gunDamage).ToString();
                 Send("Damage " + from_myself, payload);
